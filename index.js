@@ -31,7 +31,7 @@ const populateItemsDiv = async () => {
   const arrayOfPrices = allItems.map(item => item.price * item.quantity)
   const totalPrice = arrayOfPrices.reduce((a, b) => a + b, 0)
 
-  totalPriceDiv.innerText = 'Total price: $' + totalPrice
+  totalPriceDiv.innerText = 'Общая цена: $' + totalPrice
 }
 
 window.onload = populateItemsDiv
